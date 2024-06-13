@@ -14,8 +14,8 @@
     }
   ],
   "permissions": [
-    "webNavigation",
     "activeTab",
+    "webNavigation",
     "scripting"
   ],
   "action": {
