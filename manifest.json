@@ -3,19 +3,14 @@
   "name": "Browser Zoom",
   "description": "Only let zoom run in the browser. No more popups!",
   "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
   "permissions": [
+    "webNavigation",
     "declarativeNetRequest",
     "declarativeNetRequestFeedback"
   ],
-  "declarative_net_request": {
-    "rule_resources": [
-      {
-        "id": "rules",
-        "enabled": true,
-        "path": "rules.json"
-      }
-    ]
-  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon.png"
