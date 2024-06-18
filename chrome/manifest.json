@@ -15,8 +15,7 @@
   ],
   "permissions": [
     "activeTab",
-    "webNavigation",
-    "scripting"
+    "webNavigation"
   ],
   "action": {
     "default_popup": "popup.html",

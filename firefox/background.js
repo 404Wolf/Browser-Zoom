@@ -1,6 +1,7 @@
-chrome.webNavigation.onCommitted.addListener(details => {
+browser.webNavigation.onCommitted.addListener(details => {
   zoomPattern = /^https:\/\/(\w+\.)?\w+\.\w+\/j\/\d{10}\?pwd\=[a-zA-Z0-9]{32}$/;
   if (details.url.match(zoomPattern))
-    chrome.tabs.update(details.tabId, {url: `${details.url}#success`});
+    browser.tabs.update(details.tabId, {url: `${details.url}#success`});
 }, {url: [{urlMatches: ".*"}]});;
+
 
